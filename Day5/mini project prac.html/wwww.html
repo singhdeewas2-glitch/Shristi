@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FullStack Development</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* main wrapper with 2 columns */
+    .container {
+      display: flex;        /* <-- THIS makes left + right */
+      align-items: flex-start;
+    }
+
+    /* left menu */
+    .sidebar {
+      width: 200px;
+      background: #f9f9f9;
+      padding: 15px;
+      border-right: 1px solid #ccc;
+      height: 100vh;        /* full page height */
+      position: sticky;
+      top: 60px;            /* adjust if navbar present */
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      border: 1px solid #888;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    /* right content */
+    .content {
+      flex: 1;          /* takes remaining space */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="padding:10px;">FullStack Development</h2>
+
+  <div class="container">
+    <!-- Left side menu -->
+    <div class="sidebar">
+    
+        <li>ExpressJS</li>
+      </ul>
+    </div>
+
+    <!-- Right side content -->
+    <div class="content">
+      <h1>HTML</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+
+      <h2>Forms</h2>
+      <p>Form section here...</p>
+
+      <h2>Image</h2>
+      <img src="https://picsum.photos/400/250" alt="example">
+    </div>
+  </div>  <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>ReactJS</li>
+        <li>NodeJS</li>
+
+</body>
+</html>
